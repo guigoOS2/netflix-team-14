@@ -7,3 +7,6 @@ def run_pipeline():
     load_report(transformed_data)
 
     logging.info("Pipeline completed successfully.")
+
+# Execute
+run_pipeline()

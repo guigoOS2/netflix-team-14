@@ -1,3 +1,6 @@
+#Pre-code
+import logging
+
 # PART 2: TRANSFORM
 def transform_data(movies, users, history):
     logging.info("Transforming data...")

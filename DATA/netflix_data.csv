@@ -1,0 +1,7 @@
+user_id,user_name,movie_id,movie_title,genre,rating
+101,Ada,1,The Matrix,Sci-Fi,5
+101,Ada,2,Inception,Sci-Fi,4
+102,Charles,1,The Matrix,Sci-Fi,5
+103,Linus,3,Interstellar,Sci-Fi,5
+103,Linus,1,The Matrix,Sci-Fi,4
+103,Linus,2,Inception,Sci-Fi,3

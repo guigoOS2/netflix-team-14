@@ -26,3 +26,7 @@ def extract_data():
     history = list(history_df.itertuples(index=False))
 
     return movies, users, history
+
+# Run it to test or debug the extraction (Main guard)
+if __name__ == "__main__":
+    extract_data()

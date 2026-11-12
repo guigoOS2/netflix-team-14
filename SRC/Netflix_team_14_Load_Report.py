@@ -1,3 +1,8 @@
+#pre-code
+import logging
+from Netflix_team_14_Extract import extract_data
+from Netflix_team_14_Transform import transform_data
+
 # PART 3: LOAD REPORT
 def load_report(data):
     logging.info("Loading report...")
@@ -16,3 +21,9 @@ def load_report(data):
             movie for movie in data["movies"] if movie.id == movie_id
         )
         print(f"{position}. {movie.title} ({views} views)")
+
+
+if __name__ == "__main__":
+    movies, users, history = extract_data()
+    transformed_data = transform_data(movies, users, history)
+    load_report(transformed_data)

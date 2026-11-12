@@ -1,5 +1,6 @@
 #Pre-code
 import logging
+from Netflix_team_14_Extract import extract_data
 
 # PART 2: TRANSFORM
 def transform_data(movies, users, history):
@@ -41,3 +42,7 @@ def transform_data(movies, users, history):
         "movies": movies
     }
 
+# Run it to test or debug the transformation (Main guard)
+if __name__ == "__main__":
+    movies, users, history = extract_data()
+    results = transform_data(movies, users, history)
